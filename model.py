@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import copy
 import math
-import time
 from utils import *
 
 # Load data
@@ -109,7 +108,6 @@ alpha = 0.01
 num_iters = 1000
 lmbda = 0.5
 
-t0 = time.
 w, b, costs = gradientDescent(X_train_poly, Y_train, w_ini, b_ini, alpha, num_iters, lmbda)
 
 # Predict
@@ -122,6 +120,9 @@ accuracy = np.mean(pred == Y_test)
 print(f"w final: {w}")
 print(f"b final: {b}")
 print(f"Accuracy: {accuracy}")
+
+
+# Final parameter values after 100000 iterations
 
 # w final: [-0.35537872  0.21526774  0.36906146 -0.01625272  0.0704843   0.21089957
 #   0.06134054  0.02394321  0.21799754  0.05576988  0.08616593  0.23335728
