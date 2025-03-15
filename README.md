@@ -4,6 +4,9 @@
 - `2nd degree` polynomial features are used.
 - Regularization is implemented with `xi.xj for all i == j` and `lambda = 0.5`
 
+## Added a Neural Network Model
+A neural network based on `tensorflow` is added and has `29` neurons with an accuracy of `0.841` slightly more than the logistic regression model
+
  ## Description of the dataset used
  - 15 feature dataset and after regularization total number of features is 31
  - Each attribute is a potential risk factor. There are both demographic, behavioral and medical risk factors.
